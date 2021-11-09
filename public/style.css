@@ -1,0 +1,31 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  width: 100vw;
+  position: fixed;
+  background: #fff;
+}
+
+main {
+  position: absolute;
+  padding: 20px;
+  top: 70px;
+  height: calc(100vh - 70px);
+  z-index: -1;
+  overflow-y: auto;
+}
+
+input, button {
+  padding: 5px 10px;
+}

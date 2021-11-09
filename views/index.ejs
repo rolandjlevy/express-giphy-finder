@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Giphy finder</title>
+</head>
+<body>
+  <header>
+    <form action="/search" method="post">
+      <input name="search" oninput="validate(this)" placeholder="Search for a giphy..." />
+      <button type="submit" disabled>GO</button>
+    </form>
+  </header>
+  <main>
+    <% if (giphys.length) { %>
+    <%- giphys %>
+    <% } %>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
