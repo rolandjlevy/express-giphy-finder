@@ -17,6 +17,9 @@
     <% if (giphys.length) { %>
     <%- giphys %>
     <% } %>
+    <% if (error) { %>
+    <h3><%- error %></h3>
+    <% } %>
   </main>
   <script src="script.js"></script>
 </body>
