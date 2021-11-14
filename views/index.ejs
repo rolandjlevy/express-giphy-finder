@@ -14,12 +14,15 @@
     </form>
   </header>
   <main>
+  
     <% if (giphys.length) { %>
-    <%- giphys %>
+      <%- giphys %>
     <% } %>
+    
     <% if (error) { %>
-    <h3><%- error %></h3>
+      <h3><%- error %></h3>
     <% } %>
+
   </main>
   <script src="script.js"></script>
 </body>
